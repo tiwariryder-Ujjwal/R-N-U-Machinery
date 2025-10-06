@@ -8,9 +8,7 @@ import {MdOutlineShoppingCart  } from "react-icons/md";
 import { IoIosGitCompare } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
 import Tooltip from '@mui/material/Tooltip';
-import { Navigation } from '/src/components/Header/Navigation/index.jsx';
-
-
+import Navigation from "./Navigation";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
@@ -61,7 +59,7 @@ const Header = () => {
                 <div className="col3 w-[30%] flex items-center pl-7">
                     <ul className="flex items-center justify-end w-full gap-3">
                         <li className="list-none">
-                            <Link to='/login' className="link transition text-[15px] font-[500]"> Login</Link>   /&nbsp;  <Link to='/register' 
+                            <Link to='/login' className="link transition text-[15px] font-[500]"> Login</Link>   |&nbsp;  <Link to='/register' 
                             className="link transition text-[15px] font-[500]">Register</Link>
                         </li>
                         <li >
@@ -115,9 +113,8 @@ const Header = () => {
                 </div>
             </div>
 
-    <Navigation/
-    >
-                
+    
+        <Navigation/>      
 
         </header>
     )

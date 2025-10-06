@@ -8,6 +8,7 @@
 body{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  background: #f5f1f1;
 }
 .container{width:90%;margin:auto;}
 
