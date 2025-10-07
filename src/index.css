@@ -10,10 +10,14 @@ body{
   font-optical-sizing: auto;
   background: #f5f1f1;
 }
-.container{width:90%;margin:auto;}
+.container{width:95%;margin:auto;}
 
 header .top-strip{}
+  
 
   .link:hover{color:#ff5252;}
 
-  .muiBadge-badge{background-color:#ff5252 !important}
+  .muiBadge-badge{background-color:#ff5252 !important} 
+  nav Button{text-transform:capitalize  !important; color:#ff5252  !important;}
+  nav Button:hover{text-transform: capitalize !important; color:#ff5252 !important;}
+  
