@@ -10,12 +10,16 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
 
-const Categorypanel = (props) => {
+const CategoryPanel = (props) => {
+    const toggleDrawer = (newOpen) => () => {
+        props.setIsOpenCatPanel(newOpen)
+    };
 
 const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={props.openCategorypanel(false)}>
+    <Box sx={{ width: 250 }} role="presentation" onClick={props.openCategoryPanel(false)}>
     <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+        {['Machines', 'Welding Rod', 'Safety Equipments', 'Bearing', 'Lubricants', 'Hand Tools', 'Power Tools', 'Abresive Tools','Nut/Bolts']
+        .map((text, index) => (
         <ListItem key={text} disablePadding>
             <ListItemButton>
             
@@ -39,12 +43,12 @@ const DrawerList = (
     );
     return (
         <>
-        
-    <Drawer open={props.isOpenCatpanel} onClose={props.openCategorypanel(false)}>
+    <Button onClick={toggleDrawer(true)}>Open drawer</Button>  
+    <Drawer open={props.isOpenCatPanel} onClose={props.toggleDrawer(false)}>
         {DrawerList}
     </Drawer>
         </>
     )
 }
 
-export default Categorypanel;
+export default CategoryPanel;
