@@ -29,34 +29,16 @@ const openCategoryPanel=()=>{
                     <Link to="/" className="link transition text-[15px] font-[500]">
                     <Button className="link transition  !text-blue-950 text-capitalize"><b>HOME</b></Button></Link>
                 </li>
+                
                 <li className="list-none">
                     <Link to="/" className="link transition text-[15px] font-[500]">
-                    <Button className="link transition !text-blue-950 text-capitalize"><b>MACHINES</b></Button></Link>
-                </li>
-                <li className="list-none">
-                    <Link to="/" className="link transition text-[15px] font-[500]">
-                    <Button className="link transition !text-blue-950 text-capitalize"><b>LUBRICANTS</b></Button></Link>
+                    <Button className="link transition !text-blue-950 text-capitalize"><b>ABOUT US</b></Button></Link>
                 </li>
                 <li className="list-none">
                     <Link to="/" className="link transition text-[15px] font-[500]"> 
-                    <Button className="link transition !text-blue-950 text-capitalize"><b>NUT/BOLTS</b></Button></Link>
+                    <Button className="link transition !text-blue-950 text-capitalize"><b>CONTACT US</b></Button></Link>
                 </li>
-                <li className="list-none">
-                    <Link to="/" className="link transition text-[15px] font-[500]">
-                    <Button className="link transition !text-blue-950 text-capitalize"><b>V-BELTS</b></Button></Link>
-                </li>
-                <li className="list-none">
-                    <Link to="/" className="link transition text-[15px] font-[500]">
-                    <Button className="!link transition !text-blue-950 text-capitalize"><b>SPANNER & TOOLS</b></Button></Link>
-                </li>
-                <li className="list-none">
-                    <Link to="/" className="link transition text-[15px] font-[500]">
-                    <Button className="link transition !text-blue-950 text-capitalize"><b>SPARE PARTS</b></Button></Link>
-                </li>
-                <li className="list-none">
-                    <Link to="/" className="link transition text-[15px] font-[500]">
-                    <Button className="link transition !text-blue-950 text-capitalize"><b>OTHERS</b></Button></Link>
-                </li>
+                
             </ul>
             
         </div>
