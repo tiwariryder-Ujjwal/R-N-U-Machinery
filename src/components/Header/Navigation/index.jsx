@@ -1,8 +1,10 @@
 import Button from "@mui/material/Button";
 import React, { useState } from "react";
 import { TiThMenu } from "react-icons/ti";
-import {  Link} from "react-router-dom";
-import CategoryPanel from "./CategoryPanel"; 
+import {  Link } from "react-router-dom";
+import CategoryPanel from  "./CategoryPanel";
+
+
 const Navigation = () => {
 const [isOpenCatPanel ,setIsOpenCatPanel] = useState(false);
 const openCategoryPanel=()=>{
@@ -66,7 +68,7 @@ const openCategoryPanel=()=>{
 
     
         {/* category panel component */}
-    <CategoryPanel isOpenCatPanel={isOpenCategoryPanel} setIsOpenCatPanelOpenCatPanel={setIsOpenCatPanel}/>
+    <CategoryPanel isOpenCatPanel={isOpenCatPanel} setIsOpenCatPanel={setIsOpenCatPanel}/>
 
     </>
     )
