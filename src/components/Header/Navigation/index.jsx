@@ -2,7 +2,7 @@ import Button from "@mui/material/Button";
 import React, { useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 import {  Link } from "react-router-dom";
-import CategoryPanel from  "./CategoryPanel";
+import CategoryPanel from "./CategoryPanel";
 
 
 const Navigation = () => {
