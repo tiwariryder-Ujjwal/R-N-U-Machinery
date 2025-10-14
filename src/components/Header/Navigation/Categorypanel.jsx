@@ -4,6 +4,7 @@ import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import { IoCloseSharp } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const CategoryPanel = (props) => {
@@ -28,40 +29,18 @@ const DrawerList = (
     <FaAngleDown className='absolute top-[10px] right-[10px] cursor-pointer'/>
 
 
-    <ul className='submenu absolute top-[100%] left-[0%] w-full pl-4'>
+    <ul className='submenu absolute top-[100%] left-[0%] w-full pl-3'>
         <li className='list-none relative'>
             <Button className='w-full !text-left !justify-start  !text-black !cursor-pointer'>Welding Machine</Button>
             <FaAngleDown className='absolute top-[10px] right-[10px] cursor-pointer'/>
-    
-    <ul className='submenu absolute top-[100%] left-[0%] w-full pl-4'>
-        <li className='list-none relative'>
-            <Button className='w-full !text-left !justify-start  !text-black !cursor-pointer'>Single Phase</Button>
-            
-            
-            <ul className='submenu absolute top-[100%] left-[0%] w-full'>
-            <li className='list-none relative'>
-                <Button className='w-full !text-left !justify-start  !text-black !cursor-pointer'>Double Phase</Button>
-                
-            <ul className='submenu absolute top-[100%] left-[0%] w-full'>
-                <li className='list-none relative'>
-                    <Button className='w-full !text-left !justify-start  !text-black !cursor-pointer'>3 in 1 Phase</Button>
-                
-                <div className='scroll'>
-                    <ul className='w-full'>
-                    <li  className='list-none flex item-center relative'>
-                        <Button className='w-full !text-left !justify-start !px-3 !text-black'>Power Tools</Button>
-    <FaAngleDown className='absolute top-[10px] right-[10px] cursor-pointer'/>
-                    </li>
-                    </ul>
-                    </div> 
-                </li>
-            </ul>
-                </li>  
-            </ul>
-            </li>
-            </ul>
         
-        </li>
+        <ul className='submenu absolute top-[100%] left-[0%] w-full pl-4'>
+        <li className='list-none relative'>
+            <Link to="/" className='link w-full !text-left !justify-start !cursor-pointer transition text-[15px] '>Single Phase</Link>
+            <FaAngleDown className='absolute top-[10px] right-[10px] cursor-pointer'/>
+    </li>
+    </ul>
+    </li>
     </ul>
 </li>
 
